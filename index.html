@@ -1,0 +1,564 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khedidja - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo" data-translate-key="portfolio">Portfolio</div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="#home" data-translate-key="home" class="nav-link">Home</a></li>
+                <li><a href="#about" data-translate-key="about" class="nav-link">About</a></li>
+                <li><a href="#skills" data-translate-key="skills" class="nav-link">Skills</a></li>
+                <li><a href="#certificates" data-translate-key="certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#works" data-translate-key="works" class="nav-link">Works</a></li>
+                <li><a href="#contact" data-translate-key="contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-controls">
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                <svg class="theme-icon moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1-8.313-12.454z" />
+                </svg>
+                <svg class="theme-icon sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z" />
+                </svg>
+            </button>
+            <div class="language-select">
+                <select id="language" class="language-dropdown">
+                    <option value="en" style="color:black;">EN</option>
+                    <option value="fr" style="color:black;">FR</option>
+                    <option value="ar" style="color:black;">AR</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+
+    <section id="home" class="home-section">
+        <div class="intro-content">
+            <div class="intro-text">
+                <div class="text-wrapper">
+                    <h1 class="headline">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="highlight">Khedidja</span>
+                    </h1>
+                    <h2 class="subheadline">
+                        A Passionate <span class="highlight-secondary">Web Developer</span>
+                    </h2>
+                    <p class="intro-description">
+                        As an experienced ASP.NET developer, I specialize in building dynamic and scalable
+                        web applications that deliver seamless user experiences. With expertise in modern
+                        web technologies, I craft efficient and secure solutions tailored to business needs.
+                    </p>
+                    <button class="cta-button">
+                        <span>Contact Me</span>
+                        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="intro-image">
+                <div class="image-wrapper">
+                    <img src="imgs/home_img.jpg" alt="Professional Developer" loading="lazy">
+                    <div class="floating-tech">
+                        <div class="tech-icon vs-icon">
+                            <img src="imgs/Visual_Studio_Icon_2022.svg.png" alt="Visual Studio">
+                        </div>
+                        <div class="tech-icon sql-icon">
+                            <img src="imgs/sql-server.png" alt="SQL Server">
+                        </div>
+                        <div class="tech-icon dotnet-icon">
+                            <img src="imgs/dotnet-core.png" alt=".NET Core">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="profile-container">
+                <div class="profile-card">
+                    <img src="imgs/about_img.jpg" alt="Khedidja - Professional Developer" loading="lazy" class="profile-image">
+                    <div class="social-links">
+                        <a href="mailto:example@email.com" class="social-link email" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="social-link linkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" class="social-link github" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com" class="social-link twitter" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://youtube.com" class="social-link youtube" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-details">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="decorative-line"></div>
+                </div>
+
+                <p class="about-text">
+                    I'm Khedidja, a seasoned ASP.NET Developer specializing in enterprise-scale web solutions.
+                    With over a decade of experience crafting high-performance applications, I bridge the gap
+                    between technical excellence and business objectives.
+                </p>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Name:</span>
+                        <span class="info-value">Khedidja</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Location:</span>
+                        <span class="info-value">Algiers, Algeria</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Experience:</span>
+                        <span class="info-value">10+ Years</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Email:</span>
+                        <span class="info-value">contact@khedidja.dev</span>
+                    </div>
+                </div>
+
+                <a href="#" class="cta-download" download>
+                    <span>Download CV</span>
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+
+        <!-- Filter Buttons -->
+        <div class="skill-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="programming">Programming</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="management">Management</button>
+            <button class="filter-btn" data-filter="others">Others</button>
+        </div>
+
+        <!-- Skill Cards -->
+        <div class="skills-cards">
+            <!-- C# Skill Card -->
+            <div class="skill-card programming">
+                <img src="imgs/c_icon.ico" alt="C#" />
+                <h3>C#</h3>
+                <p>Experienced in writing efficient and maintainable code in C#, utilizing its object-oriented capabilities to build scalable and high-performance applications across a variety of domains, including web, desktop, and mobile platforms.</p>
+            </div>
+
+            <!-- Java Skill Card -->
+            <div class="skill-card programming">
+                <img src="imgs/java.png" alt="Java" />
+                <h3>Java</h3>
+                <p>Proficient in Java programming, capable of developing robust and scalable applications. Skilled in both object-oriented principles and design patterns, with a focus on optimizing performance and ensuring security in enterprise-level systems.</p>
+            </div>
+
+            <!-- Java EE Skill Card -->
+            <div class="skill-card programming">
+                <img src="imgs/javaee.png" alt="Java EE" />
+                <h3>Java EE</h3>
+                <p>Specialized in Java EE for building large-scale, high-availability web applications. Skilled in designing multi-tiered architectures and integrating enterprise-grade services such as databases and messaging systems for seamless, distributed applications.</p>
+            </div>
+
+            <!-- Laravel Skill Card -->
+            <div class="skill-card programming">
+                <img src="imgs/laravel.png" alt="Laravel" />
+                <h3>Laravel</h3>
+                <p>Expert in using Laravel to build modern, secure, and efficient PHP applications. With an emphasis on clean code, I leverage Laravel’s features like Eloquent ORM, routing, and blade templating to deliver high-quality web solutions.</p>
+            </div>
+
+            <!-- HTML Skill Card -->
+            <div class="skill-card programming">
+                <img src="imgs/html.png" alt="HTML" />
+                <h3>HTML</h3>
+                <p>Skilled in structuring clean and semantic HTML that adheres to web standards, ensuring accessibility and cross-browser compatibility. I focus on building intuitive, user-friendly layouts that serve as the foundation for responsive web design.</p>
+            </div>
+
+            <!-- CSS Skill Card -->
+            <div class="skill-card programming">
+                <img src="imgs/css.png" alt="CSS" />
+                <h3>CSS</h3>
+                <p>Highly experienced in CSS to create visually appealing and responsive user interfaces. My approach includes leveraging modern techniques such as Flexbox, CSS Grid, and animations to ensure designs are both functional and aesthetically pleasing across devices.</p>
+            </div>
+
+            <!-- ASP.NET Skill Card -->
+            <div class="skill-card programming">
+                <img src="imgs/asp.png" alt="ASP.NET" />
+                <h3>ASP.NET</h3>
+                <p>Proficient in ASP.NET for developing dynamic, scalable web applications. With deep knowledge of MVC and Web API frameworks, I design high-performance systems with a focus on security, responsiveness, and maintainability.</p>
+            </div>
+
+            <!-- MySQL Skill Card -->
+            <div class="skill-card programming">
+                <img src="imgs/mysql.png" alt="MySQL" />
+                <h3>MySQL</h3>
+                <p>Experienced in database design and management using MySQL. I specialize in writing optimized queries, ensuring data integrity, and implementing efficient database structures that scale with the growth of applications.</p>
+            </div>
+
+            <!-- SQL Server Skill Card -->
+            <div class="skill-card programming">
+                <img src="imgs/sql server.png" alt="SQL Server" />
+                <h3>SQL Server</h3>
+                <p>Skilled in SQL Server for developing and maintaining enterprise-level database solutions. I excel in writing complex queries, optimizing database performance, and integrating SQL Server with .NET applications to handle large-scale data transactions securely.</p>
+            </div>
+
+            <!-- Design Skills -->
+            <div class="skill-card design">
+                <img src="imgs/UX.png" alt="UX Design" />
+                <h3>User Experience (UX) Design</h3>
+                <p>Focused on creating smooth and user-friendly experiences.</p>
+            </div>
+            <div class="skill-card design">
+                <img src="imgs/ui.jpg" alt="UI Design" />
+                <h3>User Interface (UI) Design</h3>
+                <p>Expertise in designing innovative and modern interfaces.</p>
+            </div>
+            <div class="skill-card design">
+                <img src="imgs/design.png" alt="Design Thinking" />
+                <h3>Design Thinking</h3>
+                <p>Problem analysis and developing innovative solutions tailored to user needs.</p>
+            </div>
+
+            <!-- Management Skills -->
+            <div class="skill-card management">
+                <img src="imgs/project_managment.jpg" alt="Project Management" />
+                <h3>Project Management</h3>
+                <p>Proficient in planning and executing projects using best practices.</p>
+            </div>
+            <div class="skill-card management">
+                <img src="imgs/agile-methodology.jpg" alt="Agile Methodology" />
+                <h3>Agile Methodologies</h3>
+                <p>Experienced in applying Agile methods to improve workflows and boost productivity.</p>
+            </div>
+
+            <!-- Other Skills -->
+            <div class="skill-card others">
+                <img src="imgs/writing.jpg" alt="Writing Skills" />
+                <h3>Writing Skills</h3>
+                <p>Writing clear and precise reports and presentaions.</p>
+            </div>
+            <div class="skill-card others">
+                <img src="imgs/analytical-thinking.jpg" alt="Analytical Thinking" />
+                <h3>Analytical Thinking</h3>
+                <p>Strong analytical thinking and problem-solving abilities.</p>
+            </div>
+            <div class="skill-card others">
+                <img src="imgs/teamwork.png" alt="Teamwork" />
+                <h3>Teamwork & Communication</h3>
+                <p>Effective teamwork and communication skills.</p>
+            </div>
+        </div>
+    </section>
+    <!-- certificates section -->
+
+    <section id="certificates" class="certificates-section">
+        <div class="section-header-c">
+            <h2 class="section-title-c">Certifications</h2>
+            <p class="section-subtitle-c">Professional certifications validating my technical expertise</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-controls">
+            <button class="filter-btn ff active" data-filter="all">All</button>
+            <button class="filter-btn ff" data-filter="programming">Programming</button>
+            <button class="filter-btn ff" data-filter="design">Design</button>
+            <button class="filter-btn ff" data-filter="management">Management</button>
+            <button class="filter-btn ff" data-filter="cloud">Cloud</button>
+        </div>
+
+        <div class="certificates-grid">
+            <!-- Programming Certificates -->
+            <div class="certificate-card ccard" data-category="programming">
+                <div class="certificate-header">
+                    <i class="fas fa-code"></i>
+                    <h3>ASP.NET Core Professional</h3>
+                    <p>Microsoft Certified</p>
+                </div>
+                <div class="certificate-body">
+                    <div class="cert-meta">
+                        <span class="date">Issued: 12/2023</span>
+                        <span class="credential">Credential ID: MS-12345</span>
+                    </div>
+                    <a href="#" class="certificate-action">
+                        <span>View Credential</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Design Certificate -->
+            <div class="certificate-card" data-category="design">
+                <div class="certificate-header">
+                    <i class="fas fa-palette"></i>
+                    <h3>UX Design Specialist</h3>
+                    <p>Google Design Cert</p>
+                </div>
+                <div class="certificate-body">
+                    <div class="cert-meta">
+                        <span class="date">Issued: 10/2023</span>
+                        <span class="credential">Credential ID: GD-67890</span>
+                    </div>
+                    <a href="#" class="certificate-action">
+                        <span>View Credential</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Add more certificates with appropriate categories -->
+        </div>
+    </section>
+
+    <!--    Works section -->
+
+    <section class="projects-section">
+        <div class="section-header-c">
+            <h2 class="section-title-c">Web Development Projects</h2>
+            <p class="section-subtitle-c">Full-stack web applications built with modern technologies and best practices</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card">
+                <div class="project-media">
+                    <img src="imgs/t Prezka1_png - Paulina Szmidt.jpg" alt="E-commerce Platform" class="project-image" loading="lazy">
+                    <div class="tech-badges">
+                        <span class="tech-badge">ASP.NET Core</span>
+                        <span class="tech-badge">React</span>
+                    </div>
+                </div>
+
+                <div class="project-content">
+                    <h3 class="project-title">E-commerce Platform</h3>
+                    <p class="project-description">
+                        Full-featured shopping platform with payment processing, inventory management,
+                        and customer analytics.
+                    </p>
+
+                    <div class="project-actions">
+                        <a href="#" class="project-link project-link--primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="#" class="project-link project-link--secondary">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+                <div class="project-media">
+                    <img src="imgs/Logistics CRM System.jpg" alt="CRM System" class="project-image" loading="lazy">
+                    <div class="tech-badges">
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="project-content">
+                    <h3 class="project-title">CRM System</h3>
+                    <p class="project-description">
+                        Customer relationship management solution with workflow automation
+                        and real-time reporting.
+                    </p>
+
+                    <div class="project-actions">
+                        <a href="#" class="project-link project-link--primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="#" class="project-link project-link--secondary">
+                            <i class="fab fa-github"></i>
+                            Case Study
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <!-- Project 2 -->
+            <article class="project-card">
+                <div class="project-media">
+                    <img src="imgs/E-commerce Dashboard Funnels.jpg" alt="CRM System" class="project-image" loading="lazy">
+                    <div class="tech-badges">
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="project-content">
+                    <h3 class="project-title">CRM System</h3>
+                    <p class="project-description">
+                        Customer relationship management solution with workflow automation
+                        and real-time reporting.
+                    </p>
+
+                    <div class="project-actions">
+                        <a href="#" class="project-link project-link--primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="#" class="project-link project-link--secondary">
+                            <i class="fab fa-github"></i>
+                            Case Study
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Have a project in mind? Let's make it reality.</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:contact@example.com">contact@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Algiers, Algeria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Your Name</label>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email Address</label>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Your Message</label>
+                    <div class="underline"></div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-logo">KH<span>Dev</span></h3>
+                <p class="footer-tagline">Turning ideas into digital reality</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <h4 class="footer-heading">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Expertise</a></li>
+                    <li><a href="#works">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4 class="footer-heading">Let's Connect</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-envelope"></i> contact@khdev.com</li>
+                    <li><i class="fas fa-phone"></i> +213 123 456 789</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Algiers, Algeria</li>
+                </ul>
+            </div>
+
+            <div class="footer-cta">
+                <h4 class="footer-heading">Start a Project</h4>
+                <p>Have something amazing in mind?</p>
+                <a href="#contact" class="cta-button">Hire Me Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2025 KHDev. All rights reserved. <span class="crafted">Crafted with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></span></p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
